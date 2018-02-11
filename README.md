@@ -1,2 +1,2 @@
 # koinonia
-A content management framework and API server
+A content management system and API server
