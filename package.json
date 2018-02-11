@@ -1,0 +1,44 @@
+{
+  "name": "koinonia",
+  "version": "0.0.1",
+  "description": "A content management framework and API server",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jyksnw/koinonia.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jyksnw/koinonia/issues"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "check": "gts check",
+    "clean": "gts clean",
+    "compile": "tsc -p .",
+    "fix": "gts fix",
+    "prepare": "npm run compile",
+    "pretest": "npm run compile",
+    "posttest": "npm run check",
+    "start": "tsc && node build/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gts": "^0.5.3",
+    "typescript": "^2.7.1"
+  },
+  "dependencies": {
+    "@types/koa": "^2.0.44",
+    "@types/koa-bodyparser": "^4.2.0",
+    "@types/koa-router": "^7.0.27",
+    "koa": "^2.5.0",
+    "koa-bodyparser": "^4.2.0",
+    "koa-router": "^7.4.0",
+    "pg": "^7.4.1",
+    "reflect-metadata": "^0.1.12",
+    "typeorm": "^0.1.12"
+  }
+}
